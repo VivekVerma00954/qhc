@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Received | Queenstown Hindu Community</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo-container">
+        <img src="logo.png" alt="Queenstown Hindu Community Logo" class="logo-img"
+             onerror="if(!this.dataset.f){this.dataset.f=1;this.src='logo.jpg';}else{this.style.display='none';}">
+        <div class="site-title">
+          <h1>Queenstown Hindu Community</h1>
+          <p>Queenstown, New Zealand</p>
+        </div>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#events">Events</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="form.html" class="nav-cta">Join Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="success-wrap">
+
+    <div class="success-icon-ring">
+      <i class="fas fa-check"></i>
+    </div>
+
+    <h2>Registration Received!</h2>
+    <p>
+      Thank you for joining Queenstown Hindu Community.<br>
+      We're delighted to have you with us.
+    </p>
+
+    <div class="success-info-box">
+      <h3>What happens next</h3>
+      <ul>
+        <li>
+          <i class="fas fa-envelope"></i>
+          Your details have been sent to our volunteer team.
+        </li>
+        <li>
+          <i class="fas fa-calendar-check"></i>
+          You'll hear from us about upcoming satsangs and religious celebrations.
+        </li>
+        <li>
+          <i class="fab fa-facebook"></i>
+          Follow our Facebook page for the latest event announcements.
+        </li>
+      </ul>
+    </div>
+
+    <div class="action-buttons">
+      <a href="index.html" class="btn-secondary">
+        <i class="fas fa-arrow-left"></i> Back to Home
+      </a>
+      <a href="https://facebook.com/queenstownhinducommunity" target="_blank" rel="noopener noreferrer" class="btn-primary">
+        <i class="fab fa-facebook-f"></i> Follow Us
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Queenstown Hindu Community | Queenstown, New Zealand</p>
+    <p class="copyright">&copy; 2026 &mdash; All rights reserved | Run by volunteers, with love</p>
+  </footer>
+
+  <script>
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const navLinks  = document.getElementById('navLinks');
+    if (mobileBtn) mobileBtn.addEventListener('click', () => navLinks.classList.toggle('active'));
+  </script>
+</body>
+</html>

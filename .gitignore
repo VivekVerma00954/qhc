@@ -1,0 +1,14 @@
+# OS / sync junk
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+*~
+
+# Editor / tooling
+.vscode/
+.idea/
+.claude/
+
+# Netlify local
+.netlify/
