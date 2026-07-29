@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-NZ">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +9,50 @@
   <meta name="author" content="Queenstown Hindu Community">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#3f0d0d">
+  <!-- ==========================================================
+       SITE URL — if you move to a custom domain, the base URL
+       appears here (canonical, og:url, og:image, JSON-LD),
+       plus sitemap.xml and robots.txt. Nowhere else.
+       ========================================================== -->
+  <link rel="canonical" href="https://queenstownhinducommunity.netlify.app/">
   <!-- Open Graph -->
-  <meta property="og:title" content="Queenstown Hindu Community">
+  <meta property="og:title" content="Queenstown Hindu Community | Devotional Hindu Community in Queenstown NZ">
   <meta property="og:description" content="A devotional Hindu community in Queenstown, New Zealand — Kirtan, Satsang, Seva and religious celebrations.">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Queenstown Hindu Community">
+  <meta property="og:url" content="https://queenstownhinducommunity.netlify.app/">
+  <meta property="og:image" content="https://queenstownhinducommunity.netlify.app/logo.png">
+  <meta property="og:image:alt" content="Queenstown Hindu Community logo">
   <meta property="og:locale" content="en_NZ">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Queenstown Hindu Community">
+  <meta name="twitter:description" content="Kirtan, Satsang, Seva and religious celebrations in Queenstown, New Zealand.">
+  <meta name="twitter:image" content="https://queenstownhinducommunity.netlify.app/logo.png">
+  <!-- Structured Data: ReligiousOrganization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ReligiousOrganization",
+    "name": "Queenstown Hindu Community",
+    "alternateName": ["QHC", "Queenstown Hindu Community NZ"],
+    "url": "https://queenstownhinducommunity.netlify.app/",
+    "logo": "https://queenstownhinducommunity.netlify.app/logo.png",
+    "image": "https://queenstownhinducommunity.netlify.app/logo.png",
+    "description": "A devotional Hindu community in Queenstown, New Zealand. We hold Kirtan, Satsang, Seva and religious celebrations, keeping our faith and spiritual practices alive for our coming generations.",
+    "email": "queenstownhinducommunity@gmail.com",
+    "telephone": "+64211167043",
+    "areaServed": {
+      "@type": "Place",
+      "name": "Queenstown Lakes District, Otago, New Zealand"
+    },
+    "knowsLanguage": ["en", "hi"],
+    "sameAs": [
+      "https://www.facebook.com/queenstownhinducommunity",
+      "https://www.youtube.com/@QueenstownHinduCommunity"
+    ]
+  }
+  </script>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -28,7 +67,7 @@
         <img src="logo.png" alt="Queenstown Hindu Community Logo" class="logo-img"
              onerror="if(!this.dataset.f){this.dataset.f=1;this.src='logo.jpg';}else{this.style.display='none';}">
         <div class="site-title">
-          <h1>Queenstown Hindu Community</h1>
+          <span class="brand-name">Queenstown Hindu Community</span>
           <p>Queenstown, New Zealand</p>
         </div>
       </div>

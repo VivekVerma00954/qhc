@@ -2,5 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /success.html
 
-# TODO: update with final domain once chosen
 Sitemap: https://queenstownhinducommunity.netlify.app/sitemap.xml

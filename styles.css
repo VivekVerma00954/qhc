@@ -36,7 +36,7 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, .site-title h1 {
+h1, h2, h3, .site-title .brand-name {
   font-family: 'Playfair Display', Georgia, serif;
 }
 
@@ -77,7 +77,8 @@ h1, h2, h3, .site-title h1 {
   flex-shrink: 0;
 }
 
-.site-title h1 {
+.site-title .brand-name {
+  display: block;
   color: var(--gold-lt);
   font-size: 1.18rem;
   line-height: 1.25;
@@ -524,7 +525,7 @@ h1, h2, h3, .site-title h1 {
   padding: 56px 24px 46px;
 }
 
-.page-header h2 { font-size: 2rem; color: var(--gold-lt); }
+.page-header h1 { font-size: 2rem; color: var(--gold-lt); }
 
 .page-header p { color: rgba(255, 255, 255, .8); margin-top: 8px; }
 
@@ -720,7 +721,7 @@ h1, h2, h3, .site-title h1 {
   justify-content: center;
 }
 
-.success-wrap h2 { color: var(--maroon); font-size: 1.9rem; margin-bottom: 14px; }
+.success-wrap h1 { color: var(--maroon); font-size: 1.9rem; margin-bottom: 14px; }
 
 .success-wrap > p { color: var(--ink-soft); margin-bottom: 30px; }
 
@@ -799,7 +800,7 @@ h1, h2, h3, .site-title h1 {
 
   .nav-links a.nav-cta { margin: 10px 22px; text-align: center; border-radius: var(--radius); }
 
-  .site-title h1 { font-size: .98rem; }
+  .site-title .brand-name { font-size: .98rem; }
 
   .hero { padding: 70px 20px 80px; }
 

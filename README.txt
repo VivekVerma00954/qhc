@@ -22,10 +22,39 @@ Drop event poster images into  images\events\  named:
    UpcomingEvent1.png, UpcomingEvent2.png, ... up to UpcomingEvent10.png
 They appear automatically in the Events section. Remove the file to remove the event.
 
-WHEN DOMAIN IS DECIDED
-----------------------
-Update the placeholder URLs (queenstownhinducommunity.netlify.app) in:
-   robots.txt, sitemap.xml
+CURRENT LIVE URL
+----------------
+https://queenstownhinducommunity.netlify.app/
+
+MOVING TO A CUSTOM DOMAIN LATER
+-------------------------------
+The base URL appears in exactly 4 files. Find & replace
+"queenstownhinducommunity.netlify.app" with the new domain in:
+   index.html    (canonical, og:url, og:image, twitter:image, JSON-LD url/logo/image)
+   form.html     (canonical, og:url, og:image)
+   sitemap.xml   (both <loc> entries + <lastmod>)
+   robots.txt    (Sitemap: line)
+Then in Netlify: add the custom domain and let it 301-redirect the old
+netlify.app address so existing search rankings carry across.
+
+SEO CHECKLIST (done)
+--------------------
+ - Unique title + meta description per page
+ - Canonical URLs, Open Graph + Twitter Card tags (link previews show the logo)
+ - JSON-LD structured data (ReligiousOrganization) incl. Facebook + YouTube
+ - One <h1> per page, semantic headings
+ - sitemap.xml + robots.txt (success.html excluded from indexing)
+ - lang="en-NZ", mobile responsive, static/fast
+
+STILL TO DO (needs you)
+-----------------------
+ 1. Submit sitemap to Google Search Console:
+    https://search.google.com/search-console  -> add property
+    https://queenstownhinducommunity.netlify.app -> submit /sitemap.xml
+ 2. Same at Bing Webmaster Tools (optional but quick).
+ 3. Get inbound links - QLDC community directory, other local community
+    groups, your Facebook + YouTube "about" sections. This matters more for
+    local ranking than anything left on the page.
 
 HOSTING
 -------
