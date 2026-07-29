@@ -1,19 +1,18 @@
 QUEENSTOWN HINDU COMMUNITY — WEBSITE
 =====================================
 
-BEFORE GOING LIVE — 2 things to do:
+SETUP STATUS — both done
+------------------------
+1. LOGO — logo.png is in place (used by nav + favicon).
 
-1. LOGO
-   Place your round logo in this folder named:  logo.png  (or logo.jpg)
-   The site tries logo.png first, then logo.jpg, then hides the logo if neither exists.
-
-2. FORM EMAIL KEY (Web3Forms)
-   Forms (contact + membership) send email via Web3Forms (free).
-   - Go to https://web3forms.com
-   - Create an access key using:  queenstownhinducommunity@gmail.com
-   - Replace YOUR_WEB3FORMS_ACCESS_KEY_HERE in BOTH files:
+2. FORMS — live via Web3Forms, delivering to
+   queenstownhinducommunity@gmail.com
+   Key e9e6f62a-c6ad-4835-8d02-8b5a0ebeff45 is set in:
        index.html  (contact form)
        form.html   (membership form)
+   Web3Forms access keys are client-side and public by design — safe in a
+   public repo. Free tier: 250 submissions/month. If you ever get spammed,
+   generate a new key at web3forms.com and replace it in those two files.
 
 EVENTS
 ------
