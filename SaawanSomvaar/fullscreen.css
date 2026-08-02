@@ -1,0 +1,21 @@
+/* The normal lyrics card remains centred; fullscreen turns that card into the TV reader. */
+.lyrics-panel:fullscreen {
+  width: 100vw;
+  height: 100vh;
+  min-height: 0;
+  overflow-y: auto;
+  padding: clamp(2rem, 5vw, 7rem) clamp(2rem, 9vw, 13rem);
+  background: var(--paper);
+  box-shadow: none;
+}
+
+.lyrics-panel:fullscreen #lyrics-view {
+  max-width: min(100%, 1500px);
+  margin: 0 auto;
+}
+
+.lyrics-panel:fullscreen h2 { font-size: clamp(3.5rem, 7vw, 8rem); }
+.lyrics-panel:fullscreen .lyrics-content { font-size: clamp(1.35rem, 2.05vw, 2.55rem); line-height: 1.55; }
+.lyrics-panel:fullscreen .verse { padding: 2.1rem 0; }
+.lyrics-panel:fullscreen .lyrics-topline,
+.lyrics-panel:fullscreen .lyrics-footer { font-size: clamp(.8rem, 1vw, 1.05rem); }

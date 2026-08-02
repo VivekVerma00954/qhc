@@ -1,0 +1,28 @@
+.yb-logo-frame {
+  width: 44px;
+  height: 38px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+.yb-logo-frame img {
+  width: 64px;
+  height: 64px;
+  max-width: none;
+  position: absolute;
+  left: -10px;
+  top: -14px;
+  mix-blend-mode: multiply;
+}
+
+.qhc-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .brand-yb .brand-label,
+  .brand-qhc .brand-label { display: none; }
+}
