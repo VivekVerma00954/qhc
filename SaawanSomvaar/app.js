@@ -39,6 +39,7 @@
   document.querySelector('#font-up').addEventListener('click', () => { size = Math.min(1.45, +(size + .1).toFixed(2)); document.documentElement.style.setProperty('--size', size); });
   document.querySelector('#font-down').addEventListener('click', () => { size = Math.max(.8, +(size - .1).toFixed(2)); document.documentElement.style.setProperty('--size', size); });
   document.querySelector('#fullscreen').addEventListener('click', async () => { try { if (document.fullscreenElement) await document.exitFullscreen(); else await document.querySelector('.lyrics-panel').requestFullscreen(); } catch (_) {} });
+  document.querySelector('#exit-fullscreen').addEventListener('click', async () => { try { if (document.fullscreenElement) await document.exitFullscreen(); } catch (_) {} });
   document.querySelector('#start-programme').addEventListener('click', () => select(library[0].id));
   document.querySelector('#open-programme').addEventListener('click', () => document.querySelector('.app-layout').scrollIntoView({behavior:'smooth'}));
   renderList();

@@ -19,3 +19,26 @@
 .lyrics-panel:fullscreen .verse { padding: 2.1rem 0; }
 .lyrics-panel:fullscreen .lyrics-topline,
 .lyrics-panel:fullscreen .lyrics-footer { font-size: clamp(.8rem, 1vw, 1.05rem); }
+
+/* Mouse-only escape hatch: the main toolbar's fullscreen button lives outside
+   .lyrics-panel, so it disappears once fullscreen engages. This button lives
+   inside the fullscreened element itself, so it stays reachable. Esc still works too. */
+.exit-fullscreen-btn { display: none; }
+.lyrics-panel:fullscreen .exit-fullscreen-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 20;
+  padding: .6rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink);
+  font: 500 .8rem "Inter", system-ui, sans-serif;
+  box-shadow: 0 5px 22px rgba(31, 36, 32, .12);
+  cursor: pointer;
+}
+.lyrics-panel:fullscreen .exit-fullscreen-btn:hover { border-color: var(--saffron); color: var(--saffron); }
