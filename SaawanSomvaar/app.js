@@ -31,7 +31,7 @@
     if (item.officialUrl) { const link = create('a', '', item.source || 'Source / recording'); link.href = item.officialUrl; link.target = '_blank'; link.rel = 'noopener noreferrer'; source.append(link); }
     else source.textContent = item.source || 'Organiser-approved text'; content.replaceChildren();
     if (!item.verses.length) content.append(create('p', 'placeholder', 'This programme entry is ready. Paste the approved lyric into content.js before the gathering and it will display here in the same TV-friendly layout.'));
-    item.verses.forEach((verse, index) => { const section = create('section', 'verse'); section.setAttribute('aria-label', `Verse ${index + 1}`); if (verse.dev) section.append(create('div', 'devanagari', verse.dev)); if (verse.roman) { const roman = create('div', 'roman', verse.roman); roman.hidden = !romanVisible; section.append(roman); } content.append(section); });
+    item.verses.forEach((verse, index) => { const section = create('section', verse.label ? `verse verse-${verse.label.toLowerCase()}` : 'verse'); section.setAttribute('aria-label', verse.label || `Verse ${index + 1}`); if (verse.label) section.append(create('p', 'verse-label', verse.label)); if (verse.dev) section.append(create('div', 'devanagari', verse.dev)); if (verse.roman) { const roman = create('div', 'roman', verse.roman); roman.hidden = !romanVisible; section.append(roman); } content.append(section); });
     renderList(search.value); document.querySelector('.lyrics-panel').scrollIntoView({behavior:'smooth', block:'start'});
   }
   search.addEventListener('input', event => renderList(event.target.value));
